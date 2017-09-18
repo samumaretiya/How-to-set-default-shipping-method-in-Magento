@@ -40,7 +40,7 @@
             </autoshippingmethod>
         </helpers>
 		<events>
-			<checkout_cart_save_after>
+			<sales_quote_collect_totals_before> <!-- checkout_cart_product_add_after -->
 				<observers>
 					<autoshippingmethod_set_shipping_observer>
 						<type>singleton</type>
@@ -48,7 +48,7 @@
 						<method>autoshippingmethod</method>
 					</autoshippingmethod_set_shipping_observer>
 				</observers>
-			</checkout_cart_save_after>
+			</sales_quote_collect_totals_before>
 		</events>
 	</global>
 </config>
